@@ -27,7 +27,9 @@ Build a bot which **converts IP Addresses in an Excel spreadsheet to their respe
 
 _You can check out the **automation demo video for the solution** below_:
 
-https://github.com/MaxineXiong/Coronavirus-Stat-Alert-Bot-RPA/assets/55864839/9eb4e889-7d70-4766-b81f-1c30ddb7d349
+https://github.com/MaxineXiong/IP-Address-to-Location-Converter-Bot-RPA/assets/55864839/b592bed2-0693-49b0-9077-341dd070a549
+
+
 
 
 

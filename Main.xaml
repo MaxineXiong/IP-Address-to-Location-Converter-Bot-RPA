@@ -1,0 +1,376 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1076,3959" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="784,3894" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="varCountry" />
+      <Variable x:TypeArguments="x:String" Name="varRegion" />
+      <Variable x:TypeArguments="x:String" Name="varCity" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_IPs" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:Comment DisplayName="Assignment Requirements" sap:VirtualizedContainerService.HintSize="742,537" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Assignment 2: IP Address to Location Converter Bot&#xA;&#xA;Objective&#xA;&#xA;Build a bot which converts IP Addresses in an Excel spreadsheet to their respective physical locations including Country, Region and City. Use the site whatismyipaddress.com to convert the IPs. See the attached resources of this lecture to download the &quot;IPs.xlsx&quot; spreadsheet.&#xA;&#xA;Instructions&#xA;&#xA;- Navigate to the IP Lookup page on the whatismyipaddress.com website.&#xA;&#xA;- Read the data from IPs.xlsx into a DataTable variable using a workbook Read Range activity.&#xA;&#xA;- Loop through each row using a For Each Row activity.&#xA;&#xA;- Add a Try Catch activity into the body of the For Each Row to catch any errors that occur in the loop.&#xA;&#xA;- Set the catch to a System.Exception and use a Log Message activity to log the exception message at the error level.&#xA;&#xA;- Within the Try, use a Navigate To activity to navigate to the URL with the predefined IP address. Hint: Your URL will look something like this: &quot;https://whatismyipaddress.com/ip/&quot; + YourIPAddressExpression&#xA;&#xA;- Add a 3 second delay snippet after this activity.&#xA;&#xA;- Scrape the text of the Country, Region and City and store them in String variables. Use the Anchor Base, Find Element and Get text activities.&#xA;&#xA;- Write the results to the Spreadsheet in the relevant columns using a Write Cell activity." />
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Visit whatismyipaddress.com" sap:VirtualizedContainerService.HintSize="742,3229" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Background" OpenMode="Always" ScopeGuid="b2ae126f-b9cb-45e3-abc2-14ce6fd3d0f5" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="708,3012" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="666,2920" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2" ShowExcelWindow="True">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="632,2833" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Access the &quot;IPs.xlsx&quot;" sap:VirtualizedContainerService.HintSize="590,2745" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ReadFormatting="DisplayValue" ResizeWindow="Maximize" WorkbookPath="IPs.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,2476" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ClearRangeX DisplayName="Clear the columns 'Country', 'Region' and 'City'" HasHeaders="True" sap:VirtualizedContainerService.HintSize="514,116" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B:D&quot;)]" />
+                            <ueab:ExcelForEachRowX DisplayName="Iterate each Excel row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="514,2232" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_3" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="True">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="480,2042" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NGoToUrl DisplayName="Navigate to the URL with the predefined IP address" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="[&quot;https://whatismyipaddress.com/ip/&quot; + CurrentRow(&quot;IP Address&quot;).ToString]" Version="V3" />
+                                    <TryCatch DisplayName="Try scrap 'Country'" sap:VirtualizedContainerService.HintSize="438,385" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                                      <TryCatch.Try>
+                                        <uix:NGetText DisplayName="Get 'Country'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="b2ae126f-b9cb-45e3-abc2-14ce6fd3d0f5" TextString="[varCountry]" Version="V3">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://whatismyipaddress.com/ip/45.11.43.81" DesignTimeRectangle="612, 683, 85, 19" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'Turkiye'" FullSelectorArgument="&lt;webctrl parentid='fl-post-1165' tag='SPAN' parentclass='information' idx='14' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='fl-post-1165' tag='SPAN' parentclass='information' type='' class='' /&gt;" Guid="777e866c-87e9-431e-87fc-ceea684e4c13" ImageBase64="" InformativeScreenshot="2c2aaad481173a9f514915c9f04e021d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IP Address Lookup for 45.11.43.81 in Eskisehir, Turkiye' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target DesignTimeRectangle="520, 683, 92, 19" ElementType="Text" FriendlyName="'Country'" FullSelectorArgument="&lt;webctrl aaname='Country:' parentid='fl-post-1165' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Country:' parentid='fl-post-1165' tag='SPAN' type='' class='' check:innerText='Country:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAXCAYAAAD0v0pBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKiSURBVGhD7ZdBa+JAFMf3C/V7+AWEvfe2J28ePXkRD2FP0kultLiUemghsKEs0kAPKYgiUksgIhJ1mWAERVy2h/++MTWZJLrrLuum043wh8l7L47Ob+a9N++O3heQKjmlABJWCiBhpQASVgogYaUAElYKIGFFACjIqyas6QoOY7CGLpzlAk7rixBzOJW7fdS32N+eNBhLrD8CAAXlDi22eY98TgwuIJNTQs+HUn3E/hMAgQIAFRPO5BEfBGdMORXqgCBN6HSMXMynY9RKGz9RHfVRjrwTLKrnr970YU1cOl0M9pTBuDkn3yfUOmM4q2c4ZOe+20t6p0FjXYM+WsCm77HNr+gxE/nQHApqA4ovqjDmKxinou/1yweQb7roff7ZTldQpcU3LoSYUhMW2yz6HgBmz7A7GjIbf+4O7ekQH2OxLyIA3+ZDqD7kAv0GF3pFiCl2YE86OKZxtnSO7MYuiXwA9SHtnrN4gK8cLTadEP5HRXu566Jd5+M9ACxd2qlRf2DbCsC8C565LodwnoKadHxPp6nxb1LkIbQ/gDNKHV0tbudposHH+wCILPDaH8y7DcA8Nuc1paTNqbmCzigNRmqWTPIBFKkA99R4gK9XA0BIl1S37OgJkUyhImwPjCA/R/VHKUhc9L8HgOd9i35rscXQ5sU66pdIAQAqsidP1G08qDsK2a+KsEILuAgVyCx1PM733wBA945QjdgFgOaqmXRHGZgoCHapi7CnCoo68y5ftBvXF7E5pSb9yvNH2lCHdnxV6FCOSgZ6M7rE8XfZAtaDRi3ieG8AmYs+7JnXot7yU7UTAMXqNH/rWrBJ3obKJa/3VyMdlYySE0DpcV0DdtYriSQXgJMm2pSenBmlNTH1SSxJU9DbUQogYaUAElUBPwBwyWe/XhJmHgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                      </TryCatch.Try>
+                                      <TryCatch.Catches>
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="s:Exception">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <TryCatch DisplayName="Try scrap 'Country' - fallback" sap:VirtualizedContainerService.HintSize="438,385" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                                              <TryCatch.Try>
+                                                <uix:NGetText DisplayName="Get 'Country' - fallback" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="b2ae126f-b9cb-45e3-abc2-14ce6fd3d0f5" TextString="[varCountry]" Version="V3">
+                                                  <uix:NGetText.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://whatismyipaddress.com/ip/197.215.242.255" DesignTimeRectangle="520, 587, 223, 38" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'Tanzania, the'" FullSelectorArgument="&lt;webctrl parentid='fl-post-1165' tag='SPAN' parentclass='information' idx='12' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='fl-post-1165' tag='SPAN' parentclass='information' type='' class='' /&gt;" Guid="4cd48f0d-823e-4982-85d0-4d89f1202365" ImageBase64="" InformativeScreenshot="6dfe1b9ace27f3391440d66733d58e59.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IP Address Lookup for*' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                          <uix:Target DesignTimeRectangle="520, 587, 92, 19" ElementType="Text" FriendlyName="'Country'" FullSelectorArgument="&lt;webctrl aaname='Country:' parentid='fl-post-1165' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Country:' parentid='fl-post-1165' tag='SPAN' type='' class='' check:innerText='Country:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAXCAYAAAD0v0pBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKiSURBVGhD7ZdBa+JAFMf3C/V7+AWEvfe2J28ePXkRD2FP0kultLiUemghsKEs0kAPKYgiUksgIhJ1mWAERVy2h/++MTWZJLrrLuum043wh8l7L47Ob+a9N++O3heQKjmlABJWCiBhpQASVgogYaUAElYKIGFFACjIqyas6QoOY7CGLpzlAk7rixBzOJW7fdS32N+eNBhLrD8CAAXlDi22eY98TgwuIJNTQs+HUn3E/hMAgQIAFRPO5BEfBGdMORXqgCBN6HSMXMynY9RKGz9RHfVRjrwTLKrnr970YU1cOl0M9pTBuDkn3yfUOmM4q2c4ZOe+20t6p0FjXYM+WsCm77HNr+gxE/nQHApqA4ovqjDmKxinou/1yweQb7roff7ZTldQpcU3LoSYUhMW2yz6HgBmz7A7GjIbf+4O7ekQH2OxLyIA3+ZDqD7kAv0GF3pFiCl2YE86OKZxtnSO7MYuiXwA9SHtnrN4gK8cLTadEP5HRXu566Jd5+M9ACxd2qlRf2DbCsC8C565LodwnoKadHxPp6nxb1LkIbQ/gDNKHV0tbudposHH+wCILPDaH8y7DcA8Nuc1paTNqbmCzigNRmqWTPIBFKkA99R4gK9XA0BIl1S37OgJkUyhImwPjCA/R/VHKUhc9L8HgOd9i35rscXQ5sU66pdIAQAqsidP1G08qDsK2a+KsEILuAgVyCx1PM733wBA945QjdgFgOaqmXRHGZgoCHapi7CnCoo68y5ftBvXF7E5pSb9yvNH2lCHdnxV6FCOSgZ6M7rE8XfZAtaDRi3ieG8AmYs+7JnXot7yU7UTAMXqNH/rWrBJ3obKJa/3VyMdlYySE0DpcV0DdtYriSQXgJMm2pSenBmlNTH1SSxJU9DbUQogYaUAElUBPwBwyWe/XhJmHgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NGetText.Target>
+                                                </uix:NGetText>
+                                              </TryCatch.Try>
+                                              <TryCatch.Catches>
+                                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ActivityAction x:TypeArguments="s:Exception">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="476,353" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <Assign DisplayName="Assign empty value to varCountry" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[varCountry]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">
+                                                            <Literal x:TypeArguments="x:String" Value="" />
+                                                          </InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <ui:LogMessage DisplayName="Log error message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;For the IP address &quot; + CurrentRow(&quot;IP Address&quot;).ToString + &quot;, the following error occurs when extracting Country:&quot; + Environment.NewLine +&#xD;&#xA;exception.Message]" />
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </Catch>
+                                              </TryCatch.Catches>
+                                            </TryCatch>
+                                          </ActivityAction>
+                                        </Catch>
+                                      </TryCatch.Catches>
+                                    </TryCatch>
+                                    <TryCatch DisplayName="Try scrap 'Region'" sap:VirtualizedContainerService.HintSize="438,385" sap2010:WorkflowViewState.IdRef="TryCatch_11">
+                                      <TryCatch.Try>
+                                        <uix:NGetText DisplayName="Get 'Region'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="b2ae126f-b9cb-45e3-abc2-14ce6fd3d0f5" TextString="[varRegion]" Version="V3">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://whatismyipaddress.com/ip/197.215.242.255" DesignTimeRectangle="612, 728, 70, 19" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'Dar es Salaam'" FullSelectorArgument="&lt;webctrl parentid='fl-post-1165' tag='SPAN' parentclass='information' idx='14' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='fl-post-1165' tag='SPAN' parentclass='information' type='' class='' /&gt;" Guid="65654e1c-267c-48e6-8b92-569104258626" ImageBase64="" InformativeScreenshot="47b19ef53ef32026068c897cbfdc6b22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IP Address Lookup for*' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="520, 728, 92, 19" ElementType="Text" FriendlyName="'State/Region'" FullSelectorArgument="&lt;webctrl aaname='State/Region:' parentid='fl-post-1165' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='State/Region:' parentid='fl-post-1165' tag='SPAN' type='' class='' check:innerText='State/Region:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAXCAYAAAD0v0pBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQzSURBVGhD7VdNa9tAEO0fyv/wHyjk3ptPugVy8aH4YlIwhkIIlIrikFIqaAOCBGNCDaE4UBJEiENAxhg5BgnbIBNcyGH6RlqtVh+Jm1KqJPXhgfbDu7PzZt6MX6ytV2iF4rAioGCsCCgYKwIKxoqAgvFfEvDytU6lnPki8B8SYFLXn5JZyVv791AIaJJ+PiXfn5M9dMmZLchzh7T3JlzfOu+TIfcuQ51M7N/KXbsfldMpnRn4PnKJ4Ci2heH5sMe2qKplf/NUYYwoJmDjZErOyedkamp1OTZG7gMIOKTu6E8I+Eqd0ZAa/A0C/PPDxHq5gwC5bCfmnjISBBijBXU/ZDetrX+kPeuavMUteSIaW594/pDMIUgb89yUvAmypSbmbThqsSAn2D8k4y3P16nawTmTMKod95rMd3Vxh8CnITmR03MIWFv/QbZ7Qa/EuLzfJ1ue51J3vyn3BmuuWJvd0s+bKfUuLQQFguNGCSbNJHMwJ4/fMYLdk2vxDkYYSDqfNRZnTdR7WM7gt/fR/ochkwHeqXlncVqaAbULcgbHYpzNgJIROleev9mlnntFFWXPztWUOttinEeAZoFwKzwD99kji8pyzaQOSN1jidJSZ2uwZywyK0FAnXQ4v7urBEKNSY5sx16Q51iK3do3OkOwhWehoNea9DJaeyASBMgaMAPD7TaVN9Obl0kQDPf7VA2+swQYyJJWNR4z2OEyeoTTNqL1DAF11CFEYVsPxlVL1Aq5XqFX33kd3x/6cSYJxPYrBGiweRxnVAS+Jzyb92btNpAp6bk/QYoAAU2nypcL6k3m5Jy2JbtZAprUOEFUswTYLDVzpLkSOQkCOJIiSYrhoOBHslc6uCb7OHRugHQRns3prBNnqDGKJVFickv2EdbZsZAqmR1qbVEJAFF2RuYA3B2co+5VcLdcPwz5BEjUEaFz6u2H4zQBjUt0Sx21aOPR9xGQyogkdDKhsaYaVYkMgANBdEtqc15AJFEGob4gkOtDR8rMkyEAkIakHwzD0KLuyDFQRQ24k4A6fn9P2lYtsgddhUwgQQCwfUWOovmxTORjy4KUqtouoTj1tySoMAKagW5HRTGp4Tq13LkSkazPkKBZ5HR0Byh6KkElEx0QWsi8gsW9f89MzacJALYszjrRgQhCNu74XxDY21hCAOxeWoSXEPDXinADDvRvoPuspYhWb4YCqbR1pV0UNsxxSrcQHaVdOAC6HKQ46sXZwXEi6stH3HLirAHa0B2e4zaU/1AJXR+j9RvAgQl9VpBDQOAQyIkhiOdWk+uItHnSD89BR7SHAu+jdf4pwG/rHfB7Uk5NtaEe3qCrbei9BPzFNvQ5QUdToNaLEGgfZWQ/HjxLAgL5SRNQQ52B3ss295HgWRJQemeFbTQaB5a7HqTFGV4p0vJ48CwJeEpYEVAwVgQUigr9Ap0lUeIpf7H9AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                      </TryCatch.Try>
+                                      <TryCatch.Catches>
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_11">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="s:Exception">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="476,353" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign DisplayName="Assign empty value to varRegion" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[varRegion]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">
+                                                    <Literal x:TypeArguments="x:String" Value="" />
+                                                  </InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                              <ui:LogMessage DisplayName="Log error message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;For the IP address &quot; + CurrentRow(&quot;IP Address&quot;).ToString + &quot;, the following error occurs when extracting Region:&quot; + Environment.NewLine +&#xD;&#xA;exception.Message]" />
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </Catch>
+                                      </TryCatch.Catches>
+                                    </TryCatch>
+                                    <TryCatch DisplayName="Try scrap 'City'" sap:VirtualizedContainerService.HintSize="438,385" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <TryCatch.Try>
+                                        <uix:NGetText DisplayName="Get 'City'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="b2ae126f-b9cb-45e3-abc2-14ce6fd3d0f5" TextString="[varCity]" Version="V3">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://whatismyipaddress.com/ip/112.119.177.168" DesignTimeRectangle="612, 758, 90, 19" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'Hong Kong'" FullSelectorArgument="&lt;webctrl parentid='fl-post-1165' tag='SPAN' parentclass='information' idx='18' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='fl-post-1165' tag='SPAN' parentclass='information' type='' class='' /&gt;" Guid="3169c3c3-4dc1-47c4-927d-b9b19f826bae" ImageBase64="" InformativeScreenshot="0ed081582477ded46e7de112649056bd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IP Address Lookup for*' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="520, 758, 92, 19" ElementType="Text" FriendlyName="'City'" FullSelectorArgument="&lt;webctrl aaname='City:' parentid='fl-post-1165' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='City:' parentid='fl-post-1165' tag='SPAN' type='' class='' check:innerText='City:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAXCAYAAAD0v0pBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHxSURBVGhD7ZcxS8NAFMf9Qn6PfgGhezenbh0zSBdxCAWhOBVBFDGDQ0ApIgSLRCgtRVqJRCQkFS4YoaV0UPh711qbS86W2kKWN/wgd/em/N69925rO6+ByA4SkDEkIGNIQMaQgIxZScDOXg05xT7xf1YQYMIeRDA11RnxXxICdJRMB+77GCFjcL0I4WiIsHUTi5ly8PgCI7FHrIYRIC5Ax0GH/2yngVJRDswVdWktMAJGAtZEFlB1EL51sRsLkLmGPRI//QynnT7C8SdCT9wShrvnPvzmhRxftNELuijkm3C/SJYKSUCpGaF3lc70OTMB07V8AxroMQfa71pDoRHBb9T4t47CPjVvFZIAwxvDPk4HzVkkQEPlaYj2+Wxdg/nGzxOljJDZqABRwtynn2Z96MB/tSnrlyAJKPMG3DPTQXOWCMhfwGJ9nPKs11oR2kb8jFCRasKLs3aZAFH3Ge8jJqzAQyVxRqSRBfBmecTruP9gYicWNCchgL8R6uVEDJ982ozfpNZlbJ+a8F8kBAiqKFts+vjiGT55iA34D7XEiCkLyJ28wP+IJmNo/bfc6Lz5DmFVZ2sBjaF/oRCwJmL29zp89lecEUo2KmD3XvSARW8JIslGBGi3HtyAl63X5oKXNKFisyWIWBkSkDEkIFM0fAMBAvPQicwctwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                      </TryCatch.Try>
+                                      <TryCatch.Catches>
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="s:Exception">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="476,353" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign DisplayName="Assign empty value to varCity" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[varCity]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">
+                                                    <Literal x:TypeArguments="x:String" Value="" />
+                                                  </InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                              <ui:LogMessage DisplayName="Log error message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;For the IP address &quot; + CurrentRow(&quot;IP Address&quot;).ToString + &quot;, the following error occurs when extracting City:&quot; + Environment.NewLine +&#xD;&#xA;exception.Message]" />
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </Catch>
+                                      </TryCatch.Catches>
+                                    </TryCatch>
+                                    <ueab:WriteCellX Cell="[CurrentRow.ByField(&quot;Country&quot;)]" DisplayName="Write 'Country' value into the current Excel row" sap:VirtualizedContainerService.HintSize="438,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[varCountry]" />
+                                    <ueab:WriteCellX Cell="[CurrentRow.ByField(&quot;Region&quot;)]" DisplayName="Write 'Region' value into the current Excel row" sap:VirtualizedContainerService.HintSize="438,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[varRegion]" />
+                                    <ueab:WriteCellX Cell="[CurrentRow.ByField(&quot;City&quot;)]" DisplayName="Write 'City' value into the current Excel row" sap:VirtualizedContainerService.HintSize="438,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[varCity]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                            </ueab:ExcelForEachRowX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="33bfb34259995a286ebedda9475e191a.jpg" Selector="&lt;html app='chrome.exe' title='*IP Address*' /&gt;" Title="RPA_Assignment2_IP_Address_to_Location_Converter_Bot" Url="https://whatismyipaddress.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
